@@ -5,10 +5,10 @@
 Anh-Quan Cao, Maximilian Jaritz, Matthieu Guillaumin, Raoul de Charette, Loris Bazzani
 
 [Anh-Quan Cao](https://anhquancao.github.io)<sup>1</sup>&nbsp;&nbsp;&nbsp;
-[Maximilian Jaritz](https://www.3dunderstanding.org/)<sup>2</sup>&nbsp;&nbsp;&nbsp;
-[Matthieu Guillaumin](https://www.3dunderstanding.org/)<sup>2</sup>&nbsp;&nbsp;&nbsp;
+[Maximilian Jaritz](https://scholar.google.co.uk/citations?user=yt2IsdAAAAAJ&hl=de)<sup>2</sup>&nbsp;&nbsp;&nbsp;
+[Matthieu Guillaumin](https://scholar.google.com/citations?user=jFdZ8s4AAAAJ&hl=en)<sup>2</sup>&nbsp;&nbsp;&nbsp;
 [Raoul de Charette](https://team.inria.fr/rits/membres/raoul-de-charette/)<sup>1</sup>&nbsp;&nbsp;&nbsp;
-[Loris Bazzani](https://www.3dunderstanding.org/)<sup>2</sup>&nbsp;&nbsp;&nbsp;
+[Loris Bazzani](https://lorisbaz.github.io/)<sup>2</sup>&nbsp;&nbsp;&nbsp;
 
 <div>
 <sup>1</sup> Inria
