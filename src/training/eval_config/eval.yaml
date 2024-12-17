@@ -1,0 +1,373 @@
+tasks:
+  abo_val_zeroshot_classification:
+    # num_classes: 5
+    dataset_loading_kwargs:
+      dataset_name: "ABO_zero_shot"
+      filename: "dataframes/test_data_for_0shot_eval.parquet"
+    # batch_size: 64
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  "/home/ubuntu/data/abo_preprocess"
+      train: False
+      transform: "default_clip"
+      topk:
+        - 1
+  abo_train_zeroshot_classification:
+    # num_classes: 5
+    dataset_loading_kwargs:
+      dataset_name: "ABO_zero_shot"
+      filename: "dataframes/test_data_for_0shot_eval.parquet"
+    # batch_size: 64
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  "/home/ubuntu/data/abo_preprocess"
+      train: True
+      transform: "default_clip"
+      topk:
+        - 1
+  caltech101_train_zeroshot_classification:
+    # num_classes: 5
+    dataset_loading_kwargs:
+      dataset_name: "caltech101_zero_shot"
+    # batch_size: 64
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  $LATTECLIP_DATA_DIR/caltech101_preprocess
+      train: True
+      transform: "default_clip"
+      topk:
+        - 1
+  caltech101_val_zeroshot_classification:
+    # num_classes: 5
+    dataset_loading_kwargs:
+      dataset_name: "caltech101_zero_shot"
+    # batch_size: 64
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  "$LATTECLIP_DATA_DIR/caltech101_preprocess"
+      train: False
+      transform: "default_clip"
+      topk:
+        - 1
+  dtd_train_zeroshot_classification:
+    # num_classes: 5
+    dataset_loading_kwargs:
+      dataset_name: "dtd_zero_shot"
+    # batch_size: 64
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  $LATTECLIP_DATA_DIR/dtd_preprocess
+      train: True
+      transform: "default_clip"
+      topk:
+        - 1
+  dtd_val_zeroshot_classification:
+    # num_classes: 5
+    dataset_loading_kwargs:
+      dataset_name: "dtd_zero_shot"
+    # batch_size: 64
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  "$LATTECLIP_DATA_DIR/dtd_preprocess"
+      train: False
+      transform: "default_clip"
+      topk:
+        - 1
+  food101_train_zeroshot_classification:
+    # num_classes: 5
+    dataset_loading_kwargs:
+      dataset_name: "food101_zero_shot"
+    # batch_size: 64
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  $LATTECLIP_DATA_DIR/food101_preprocess
+      train: True
+      transform: "default_clip"
+      topk:
+        - 1
+  food101_val_zeroshot_classification:
+    # num_classes: 5
+    dataset_loading_kwargs:
+      dataset_name: "food101_zero_shot"
+    # batch_size: 64
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  "$LATTECLIP_DATA_DIR/food101_preprocess"
+      train: False
+      transform: "default_clip"
+      topk:
+        - 1
+  fgvc_aircraft_train_zeroshot_classification:
+    # num_classes: 5
+    dataset_loading_kwargs:
+      dataset_name: "fgvc_aircraft_zero_shot"
+    # batch_size: 64
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  $LATTECLIP_DATA_DIR/fgvc_aircraft_preprocess
+      train: True
+      transform: "default_clip"
+      topk:
+        - 1
+  fgvc_aircraft_val_zeroshot_classification:
+    # num_classes: 5
+    dataset_loading_kwargs:
+      dataset_name: "fgvc_aircraft_zero_shot"
+    # batch_size: 64
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  "$LATTECLIP_DATA_DIR/fgvc_aircraft_preprocess"
+      train: False
+      transform: "default_clip"
+      topk:
+        - 1
+  flower102_train_zeroshot_classification:
+    # num_classes: 5
+    dataset_loading_kwargs:
+      dataset_name: "flower102_zero_shot"
+    # batch_size: 64
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  "$LATTECLIP_DATA_DIR/flower102_preprocess"
+      train: True
+      transform: "default_clip"
+      topk:
+        - 1
+  flower102_val_zeroshot_classification:
+    # num_classes: 5
+    dataset_loading_kwargs:
+      dataset_name: "flower102_zero_shot"
+    # batch_size: 64
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  "$LATTECLIP_DATA_DIR/flower102_preprocess"
+      train: False
+      transform: "default_clip"
+      topk:
+        - 1
+  oxford_pets_train_zeroshot_classification:
+    # num_classes: 5
+    dataset_loading_kwargs:
+      dataset_name: "oxford_pets_zero_shot"
+    # batch_size: 64
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  "$LATTECLIP_DATA_DIR/oxford_pets_preprocess"
+      train: True
+      transform: "default_clip"
+      topk:
+        - 1
+  oxford_pets_val_zeroshot_classification:
+    # num_classes: 5
+    dataset_loading_kwargs:
+      dataset_name: "oxford_pets_zero_shot"
+    # batch_size: 64
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  "$LATTECLIP_DATA_DIR/oxford_pets_preprocess"
+      train: False
+      transform: "default_clip"
+      topk:
+        - 1
+  stanford_cars_train_zeroshot_classification:
+    # num_classes: 5
+    dataset_loading_kwargs:
+      dataset_name: "stanford_cars_zero_shot"
+    # batch_size: 64
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  "$LATTECLIP_DATA_DIR/stanford_cars_preprocess"
+      train: True
+      transform: "default_clip"
+      topk:
+        - 1
+  stanford_cars_val_zeroshot_classification:
+    # num_classes: 5
+    dataset_loading_kwargs:
+      dataset_name: "stanford_cars_zero_shot"
+    # batch_size: 64
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  "$LATTECLIP_DATA_DIR/stanford_cars_preprocess"
+      train: False
+      transform: "default_clip"
+      topk:
+        - 1
+  ucf101_train_zeroshot_classification:
+    # num_classes: 5
+    dataset_loading_kwargs:
+      dataset_name: "ucf101_zero_shot"
+    # batch_size: 64
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  "$LATTECLIP_DATA_DIR/ucf101_preprocess"
+      train: True
+      transform: "default_clip"
+      topk:
+        - 1
+  ucf101_val_zeroshot_classification:
+    # num_classes: 5
+    dataset_loading_kwargs:
+      dataset_name: "ucf101_zero_shot"
+    # batch_size: 64
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  "$LATTECLIP_DATA_DIR/ucf101_preprocess"
+      train: False
+      transform: "default_clip"
+      topk:
+        - 1
+  sun397_val_zeroshot_classification:
+    dataset_loading_kwargs:
+      dataset_name: "sun397_zero_shot"
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  "$LATTECLIP_DATA_DIR/sun397_preprocess"
+      train: False
+      transform: "default_clip"
+      topk:
+        - 1
+  sun397_train_zeroshot_classification:
+    dataset_loading_kwargs:
+      dataset_name: "sun397_zero_shot"
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  "$LATTECLIP_DATA_DIR/sun397_preprocess"
+      train: True
+      transform: "default_clip"
+      topk:
+        - 1      
+  eurosat_val_zeroshot_classification:
+    dataset_loading_kwargs:
+      dataset_name: "eurosat_zero_shot"
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  "$LATTECLIP_DATA_DIR/eurosat_preprocess"
+      train: False
+      transform: "default_clip"
+      topk:
+        - 1
+  eurosat_train_zeroshot_classification:
+    dataset_loading_kwargs:
+      dataset_name: "eurosat_zero_shot"
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  "$LATTECLIP_DATA_DIR/eurosat_preprocess"
+      train: True
+      transform: "default_clip"
+      topk:
+        - 1
+  inat_train_zeroshot_classification:
+    # num_classes: 5
+    dataset_loading_kwargs:
+      dataset_name: "inat_zero_shot"
+    # batch_size: 64
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  "/home/ubuntu/data/inat_preprocess"
+      train: True
+      transform: "default_clip"
+      topk:
+        - 1
+  inat_val_zeroshot_classification:
+    # num_classes: 5
+    dataset_loading_kwargs:
+      dataset_name: "inat_zero_shot"
+    # batch_size: 64
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  "/home/ubuntu/data/inat_preprocess"
+      train: False
+      transform: "default_clip"
+      topk:
+        - 1
+  food101_zeroshot_classification:
+    # num_classes: 5
+    dataset_loading_kwargs:
+      dataset_name: "food101_zero_shot"
+    # batch_size: 64
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  "/home/ubuntu/data/food101_preprocess/webdataset/original"
+      train: False
+      transform: "default_clip"
+      topk:
+        - 1
+  ifood2019_train_zeroshot_classification:
+    # num_classes: 5
+    dataset_loading_kwargs:
+      dataset_name: "ifood2019_zero_shot"
+    # batch_size: 64
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  "/home/ubuntu/data/ifood2019_preprocess"
+      train: True
+      transform: "default_clip"
+      topk:
+        - 1
+  ifood2019_val_zeroshot_classification:
+    # num_classes: 5
+    dataset_loading_kwargs:
+      dataset_name: "ifood2019_zero_shot"
+    # batch_size: 64
+    num_workers: 8
+    return_f1_score: 0
+    dataset_specific_kwargs:
+      # attribute: "PT_names"
+      preprocess_path:  "/home/ubuntu/data/ifood2019_preprocess"
+      train: False
+      transform: "default_clip"
+      topk:
+        - 1
