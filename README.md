@@ -86,7 +86,7 @@ bash scripts/preprocess/preprocess.sh
 
 # Generate Descriptions
 
-## Generate Image Descriptions
+## 1. Generate Image Descriptions
 
 To generate image descriptions, follow these steps:
 
@@ -124,7 +124,7 @@ bash scripts/unsupervised/extract_captions_llava_multiprocess.sh 0 1 classname_u
 bash scripts/unsupervised/extract_captions_llava_multiprocess.sh 0 1 classname_caltech caltech101 5 1
 ```
 
-## Generate Group Descriptions
+## 2. Generate Group Descriptions
 
 The process is similar to generating image descriptions. Use the following commands:
 
