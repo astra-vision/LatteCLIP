@@ -187,7 +187,8 @@ bash scripts/unsupervised/sun397_fine_tune_multiclass.sh 1e-7 1 0 25672 1 exp_su
 bash scripts/unsupervised/ucf101_fine_tune_multiclass.sh 1e-7 1 0 25673 1 exp_ucf101
 ```
 
-> **Note**: Logs will be stored in the `logs` folder.
+> [!NOTE]  
+> Logs will be stored in the `logs` folder.
 
 ---
 
