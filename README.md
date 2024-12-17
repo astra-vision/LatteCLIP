@@ -31,9 +31,22 @@ If you find this work or code useful, please cite our [paper](https://arxiv.org/
 }
 ```
 
+
 # News
 - 17/12/2024: code is released.
 - 14/10/2024: code will be available soon.
+
+# Table of Contents
+
+1. [Installation](#installation)
+   - [Install OpenCLIP's Dependencies](#1-install-openclips-dependencies)
+   - [Install LLaVA](#2-install-llava)
+2. [Data Preparation](#data-preparation)
+3. [Generate Descriptions](#generate-descriptions)
+   - [Generate Image Descriptions](#1-generate-image-descriptions)
+   - [Generate Group Descriptions](#2-generate-group-descriptions)
+4. [Training](#training)
+5. [Acknowledgement](#acknowledgement)
 
 
 # Installation
